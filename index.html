@@ -1,349 +1,458 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>HOTEL</title>
-        <meta name="viewport" content="width-devide-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
-        <script src="https://kit.fontaawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
-        <link rel="icon" href="img/logo-no-background.png" type="image/png">
-    </head>
-    <body>
-        <header class="header" id="header">
-            <div class = head-top>
-                <div class="site-name">
-                    <span>AccuStay</span>
-                </div>
-                <div class="site-nav">
-                    <span id="nav-btn">MENU<i class="fas fa-bars"></i></span>
-                </div>
-            </div>
-            <div class="head-bottom flex">
-                <h2>A pleasant and cozy accommodation option.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ad a rem ipsam, architecto asperiores dolor est doloribus eligendi minus, officia officiis ex, consequuntur nulla maiores voluptate qui similique molestias.</p>
-                <button type="button" class="head-btn">GET STARTED</button>
-            </div>
-        </header>
+  <head>
+    <meta charset="utf-8" />
+    <title>HOTEL</title>
+    <meta name="viewport" content="width-devide-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+    <script
+      src="https://kit.fontaawesome.com/dbed6b6114.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="img/logo-no-background.png" type="image/png" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="head-top">
+        <div class="site-name">
+          <span>AccuStay</span>
+        </div>
+        <div class="site-nav">
+          <span id="nav-btn">MENU<i class="fas fa-bars"></i></span>
+        </div>
+      </div>
+      <div class="head-bottom flex">
+        <h2>A pleasant and cozy accommodation option.</h2>
+        <p>
+          At AccuStay, we believe that exceptional guest experiences begin with
+          efficient and streamlined operations. Our innovative Hotel Management
+          System is designed to empower hoteliers and hospitality professionals
+          with the tools they need to optimize their operations, elevate guest
+          satisfaction, and maximize revenue.
+        </p>
+        <button type="button" class="head-btn">GET STARTED</button>
+      </div>
+    </header>
 
-        <div class="sidenav" id="sidenav">
-            <span class="cancel-btn" id="cancel-btn">
-                <i class="fa fa-times"></i>
+    <div class="sidenav" id="sidenav">
+      <span class="cancel-btn" id="cancel-btn">
+        <i class="fa fa-times"></i>
+      </span>
+
+      <ul class="navbar">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#customers">Customers</a></li>
+      </ul>
+      <button class="btn sign-up">sign-up</button>
+      <button class="btn log-in">log-in</button>
+    </div>
+
+    <div id="modal"></div>
+
+    <section class="services sec-width" id="services">
+      <div class="title">
+        <h2 id="services-h2">Services</h2>
+      </div>
+      <div class="services-container">
+        <article class="service">
+          <div class="services-icon">
+            <span>
+              <i class="fas fa-utensils"></i>
             </span>
+          </div>
+          <div class="service-content">
+            <h2>Food Service/ Food Runner</h2>
+            <p>
+              At AccuStay, our Food Service/Food Runner team ensures impeccable
+              service and unforgettable dining experiences. From promptly
+              delivering beautifully presented dishes to providing insightful
+              recommendations, our team creates a warm and welcoming atmosphere.
+              With a focus on guest satisfaction and attention to food safety,
+              they go above and beyond to exceed expectations and make every
+              meal exceptional
+            </p>
+            <button type="button" class="btn">Know More</button>
+          </div>
+        </article>
+        <article class="service">
+          <div class="services-icon">
+            <span>
+              <i class="fas fa-swimming-pool"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Refreshements</h2>
+            <p>
+              At AccuStay, our Refreshments team is dedicated to providing a
+              delightful and rejuvenating experience. Whether you're in need of
+              a refreshing beverage or a delectable snack, our team ensures
+              prompt and attentive service. With a keen eye for detail, they
+              curate a selection of high-quality refreshments to cater to every
+              taste. Sit back, relax, and let our Refreshments team create a
+              memorable and invigorating break during your stay.
+            </p>
+            <button type="button" class="btn">Know More</button>
+          </div>
+        </article>
 
-            <ul class="navbar">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#rooms">Rooms</a></li>
-                <li><a href="#customers">Customers</a></li>
+        <article class="service">
+          <div class="services-icon">
+            <span>
+              <i class="fas fa-broom"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Housekeeping</h2>
+            <p>
+              Welcome to AccuStay, where our Housekeeping team takes pride in
+              creating a pristine and comfortable environment for your stay.
+              With meticulous attention to detail, our dedicated team ensures
+              that every room is impeccably cleaned and maintained. From fresh
+              linens to spotless surfaces, we strive to exceed your expectations
+              and provide a relaxing and hygienic atmosphere. Experience the
+              highest standards of cleanliness and exceptional housekeeping
+              service at AccuStay.
+            </p>
+            <button type="button" class="btn">Know More</button>
+          </div>
+        </article>
+
+        <article class="service">
+          <div class="services-icon">
+            <span>
+              <i class="fas fa-door-closed"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Room Security</h2>
+            <p>
+              At AccuStay, your safety and security are our top priorities. We
+              understand the importance of providing a secure environment for
+              our guests, which is why we have implemented comprehensive room
+              security measures. Our state-of-the-art security systems,
+              including secure keycard access and 24/7 surveillance, ensure that
+              only authorized individuals have access to the rooms.
+              Additionally, our well-trained staff is always available to
+              address any security concerns and provide assistance when needed.
+              Rest assured that your peace of mind is our utmost concern at
+              AccuStay.
+            </p>
+            <button type="button" class="btn">Know More</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="book">
+      <form class="book-form">
+        <div class="form-item">
+          <label for="checkin-date">Check In Date: </label>
+          <input type="date" id="checkin-date" />
+        </div>
+        <div class="form-item">
+          <label for="checkout-date">Check Out Date: </label>
+          <input type="date" id="checkout-date" />
+        </div>
+        <div class="form-item">
+          <label for="adults">Adults: </label>
+          <input type="number" min="1" value="1" id="adults" />
+        </div>
+        <div class="form-item">
+          <label for="children">Children: </label>
+          <input type="number" min="0" value="0" id="children" />
+        </div>
+        <div class="form-item">
+          <label for="rooms">Rooms: </label>
+          <input type="number" min="1" value="1" id="rooms" />
+        </div>
+        <div class="form-item">
+          <input type="submit" class="btn" value="Book Now" />
+        </div>
+      </form>
+    </div>
+
+    <section class="rooms sec-width" id="rooms">
+      <div class="title">
+        <h2>rooms</h2>
+      </div>
+      <div class="rooms-container">
+        <article class="room">
+          <div class="room-image">
+            <img src="img/room small.jpg" alt="room image" />
+          </div>
+          <div class="room-text">
+            <h3>Small Luxury Rooms</h3>
+            <ul>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Intimate and Cozy Retreats.
+              </li>
+
+              <li>
+                <i class="fas fa-arrow-alt-circle-right">
+                  Stylish and Thoughtfully Designed
+                </i>
+              </li>
+
+              <li>
+                <i class="fas fa-arrow-alt-circle-right">
+                  Modern Amenities for Your Comfort
+                </i>
+              </li>
             </ul>
-            <button class="btn sign-up">sign-up</button>
-            <button class="btn log-in"></button>
+            <p>
+              Step into our Small Luxury Rooms at AccuStay and experience the
+              perfect blend of comfort, style, and intimacy. Designed as cozy
+              retreats, these rooms offer a warm and inviting ambiance, making
+              them ideal for couples or solo travelers seeking a tranquil space
+              to unwind. Each room is meticulously designed with a focus on
+              aesthetics and functionality, featuring modern furnishings and
+              tasteful decor that create a chic and sophisticated atmosphere.
+              Despite their compact size, these rooms are equipped with all the
+              modern amenities you need for a comfortable stay. From plush
+              bedding and luxurious linens to high-speed Wi-Fi and flat-screen
+              TVs, we ensure that every detail is carefully considered to
+              enhance your experience. Discover a sanctuary of elegance and
+              tranquility in our Small Luxury Rooms, where every moment spent is
+              a true indulgence.
+            </p>
+            <p class="rate"><span>$100.00 /</span> Per Night</p>
+            <button type="button" class="btn">book now</button>
+          </div>
+        </article>
+
+        <article class="room">
+          <div class="room-image">
+            <img src="img/room med.jpg" alt="room image" />
+          </div>
+          <div class="room-text">
+            <h3>Medium Sized Luxury Rooms</h3>
+            <ul>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Spacious and Versatile Accommodations
+              </li>
+
+              <li>
+                <i class="fas fa-arrow-alt-circle-right">
+                  Modern Comforts with Room to Relax
+                </i>
+              </li>
+
+              <li>
+                <i class="fas fa-arrow-alt-circle-right">
+                  Thoughtfully Designed for Your Convenience
+                </i>
+              </li>
+            </ul>
+            <p>
+              Welcome to our Medium-Sized Rooms at AccuStay, where spaciousness
+              meets comfort. These versatile accommodations are perfect for
+              guests seeking a bit more room to relax and unwind. With ample
+              space to move around and unwind, these rooms offer a generous
+              layout that ensures your comfort throughout your stay. Each room
+              is thoughtfully designed to provide a modern and inviting
+              atmosphere, featuring contemporary furnishings and tasteful decor.
+              Sink into the cozy seating area or enjoy a restful night's sleep
+              on the plush bedding. Our medium-sized rooms are equipped with all
+              the modern comforts you need, including high-speed Wi-Fi, a work
+              desk, and a flat-screen TV for your entertainment. Whether you're
+              traveling for business or leisure, our Medium-Sized Rooms offer a
+              balance of comfort and convenience to make your stay truly
+              enjoyable.
+            </p>
+            <p class="rate"><span>$160.00 /</span> Per Night</p>
+            <button type="button" class="btn">book now</button>
+          </div>
+        </article>
+
+        <article class="room">
+          <div class="room-image">
+            <img src="img/suite room.jpg" alt="room image" />
+          </div>
+          <div class="room-text">
+            <h3>Suite Rooms</h3>
+            <ul>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Luxurious and Spacious Retreats
+              </li>
+
+              <li>
+                <i class="fas fa-arrow-alt-circle-right">
+                  Elevated Comfort and Privacy
+                </i>
+              </li>
+
+              <li>
+                <i class="fas fa-arrow-alt-circle-right">
+                  Unparalleled Elegance and Exclusive Amenities
+                </i>
+              </li>
+            </ul>
+            <p>
+              Indulge in the epitome of luxury at AccuStay with our exquisite
+              Suite Rooms. These spacious retreats redefine the art of comfort
+              and privacy, offering a lavish escape for the discerning traveler.
+              Step into a world of unparalleled elegance, where every detail has
+              been carefully crafted to create a truly extraordinary experience.
+              The suite rooms boast a generous floor plan that encompasses
+              separate living and sleeping areas, providing ample space to
+              relax, entertain, and rejuvenate. Immerse yourself in the opulence
+              of plush furnishings, upscale decor, and refined touches that
+              exude sophistication. As a guest in our suites, you'll enjoy
+              exclusive amenities such as a private balcony, a luxurious
+              en-suite bathroom, and personalized concierge service. Whether
+              you're seeking a romantic getaway or a luxurious retreat, our
+              Suite Rooms offer a haven of comfort and extravagance that will
+              leave you with unforgettable memories.
+            </p>
+            <p class="rate"><span>$220.00 /</span> Per Night</p>
+            <button type="button" class="btn">book now</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="customers" id="customers">
+      <div class="sec-width">
+        <div class="title">
+          <h2>customers</h2>
+        </div>
+        <div class="customers-container">
+          <div class="rating">
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+          </div>
+          <h3>We Loved it</h3>
+          <p>
+            "My stay at AccuStay was nothing short of exceptional. The small
+            luxury room I stayed in was cozy and beautifully designed, with
+            every detail thoughtfully considered. The modern amenities provided
+            added convenience, and the attention to cleanliness was impressive.
+            The staff went above and beyond to ensure my comfort, and their warm
+            and friendly demeanor made me feel right at home. I highly recommend
+            AccuStay for anyone seeking a luxurious and intimate experience."
+          </p>
+          <span>Sarah M, USA</span>
         </div>
 
-        <div id = "modal"></div>
-
-        <section class="services sec-width" id="services">
-            <div class="title">
-                <h2>Services</h2>
-            </div>
-            <div class="services-container">
-                <article class="service">
-                    <div class="services-icon">
-                        <span>
-                            <i class = "fas fa-utensils"></i>
-                        </span>
-                    </div>
-                    <div class="service-content">
-                        <h2>Food Service/ Food Runner</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore blanditiis corporis laboriosam quae saepe natus illum deleniti tenetur iure doloremque quidem doloribus, veritatis esse voluptatibus distinctio facere laudantium soluta molestias.</p>
-                        <button type="button" class="btn">Know More</button>
-                    </div>
-                </article>
-                <article class="service">
-                    <div class="services-icon">
-                        <span>
-                            <i class="fas fa-swimming-pool"></i>
-                        </span>
-                    </div>
-                    <div class="service-content">
-                        <h2>Refreshements</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repellat vel nesciunt, quidem veritatis qui fuga ex natus, ut, autem perspiciatis aspernatur assumenda nisi dolor tempore excepturi praesentium et porro?</p>
-                        <button type="button" class="btn">Know More</button>
-                    </div>
-                </article>
-                
-                <article class="service">
-                    <div class="services-icon">
-                        <span>
-                            <i class="fas fa-broom"></i>
-                        </span>
-                    </div>
-                    <div class="service-content">
-                        <h2>Housekeeping</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus quo totam molestiae ullam vel vero repudiandae sequi autem. Deserunt reiciendis quis sapiente, nemo quisquam molestias amet impedit dolor quae fugiat.</p>
-                        <button type="button" class="btn">Know More</button>
-                    </div>
-                </article>
-
-                <article class="service">
-                    <div class="services-icon">
-                        <span>
-                            <i class="fas fa-door-closed"></i>
-                        </span>
-                    </div>
-                    <div class="service-content">
-                        <h2>Room Security</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum eum suscipit obcaecati omnis est quo molestias aut, optio ullam impedit laborum soluta voluptas. Excepturi at praesentium, ipsum nobis aliquam assumenda.</p>
-                        <button type="button" class="btn">Know More</button>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <div class="book">
-            <form class="book-form">
-                <div class="form-item">
-                    <label for="checkin-date">Check In Date: </label>
-                    <input type="date" id="checkin-date">
-                </div>
-                <div class="form-item">
-                    <label for="checkout-date">Check Out Date: </label>
-                    <input type="date" id="checkout-date">
-                </div>
-                <div class="form-item">
-                    <label for="adults">Adults: </label>
-                    <input type="number" min="1" value="1" id="adults">
-                </div>
-                <div class="form-item">
-                    <label for="children">Children: </label>
-                    <input type="number" min="0" value="0" id="children">
-                </div>
-                <div class="form-item">
-                    <label for="rooms">Rooms: </label>
-                    <input type="number" min="1" value="1" id="rooms">
-                </div>
-                <div class="form-item">
-                    <input type="submit" class="btn" value="Book Now">
-                </div>
-            </form>
+        <div class="customers-container">
+          <div class="rating">
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+          </div>
+          <h3>Nice Place</h3>
+          <p>
+            "The medium-sized room at AccuStay exceeded my expectations. The
+            spacious layout and tasteful decor made me feel instantly relaxed
+            and at ease. The comfortable bedding and thoughtful amenities
+            provided everything I needed for a comfortable stay. The attention
+            to detail was evident throughout, from the well-designed work desk
+            to the high-speed Wi-Fi that kept me connected. I truly enjoyed my
+            time in the medium-sized room and would choose AccuStay again for
+            its exceptional accommodations."
+          </p>
+          <span>Jack S, India</span>
         </div>
 
-        <section class = "rooms sec-width" id = "rooms">
-            <div class = "title">
-                <h2>rooms</h2>
-            </div>
-            <div class = "rooms-container">
-                <article class="room">
-                    <div class="room-image">
-                        <img src="img/room small.jpg" alt="room image">
-                    </div>
-                    <div class="room-text">
-                        <h3>Small Luxury Rooms</h3>
-                        <ul>
-                            <li>
-                                <i class="fas fa-arrow-alt-circle-right"></i>
-                                lorem ipsum dolor sit amit.
-                            </li>
+        <div class="customers-container">
+          <div class="rating">
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+          </div>
+          <h3>Comfortable living</h3>
+          <p>
+            "Staying in the suite room at AccuStay was like entering a world of
+            pure luxury. The expansive layout, elegant furnishings, and
+            beautiful decor created a sophisticated and opulent ambiance. The
+            private balcony provided breathtaking views, and the exclusive
+            amenities elevated my experience to new heights. The personalized
+            concierge service was an added bonus, attending to my every need and
+            ensuring a memorable stay. If you're looking for a truly indulgent
+            retreat, the suite rooms at AccuStay are an absolute must."
+          </p>
+          <span>Emily T, UK</span>
+        </div>
+      </div>
+    </section>
 
-                            <li>
-                                <i class="fas fa-arrow-alt-circle-right">
-                                    lorem ipsum dolor sit amit.
-                                </i>
-                            </li>
+    <footer class="footer">
+      <div class="footer-container">
+        <div>
+          <h2>About Us</h2>
+          <p>
+            AccuStay is a premier hospitality destination committed to providing
+            exceptional experiences and impeccable service. With stylish
+            accommodations, attentive staff, and a dedication to guest
+            satisfaction, we strive to create unforgettable stays for every
+            traveler. Discover the AccuStay difference and experience the
+            epitome of hospitality.
+          </p>
+          <ul class="social-icons">
+            <li class="flex">
+              <i class="fa fa-twitter fa-2x"></i>
+            </li>
+            <li class="flex">
+              <i class="fa fa-facebook fa-2x"></i>
+            </li>
+            <li class="flex">
+              <i class="fa fa-instagram fa-2x"></i>
+            </li>
+          </ul>
+        </div>
 
-                            <li>
-                                <i class="fas fa-arrow-alt-circle-right">
-                                    lorem ipsum dolor sit amit.
-                                </i>
-                            </li>
-                        </ul>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta iusto officia nemo architecto, enim deserunt. Tenetur quo dicta facere nulla harum! Voluptate commodi mollitia quae aspernatur doloremque fugit tenetur modi!</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto quis, deleniti sint perferendis in dicta unde quibusdam temporibus optio sapiente dolores! Possimus dignissimos accusamus quia, voluptatum consequatur vero eius animi.</p>
-                        <p class="rate">
-                            <span>$100.00 /</span> Per Night
-                        </p>
-                        <button type="button" class = "btn">book now</button>
-                    </div>
-                </article>
+        <div>
+          <h2>Useful Links</h2>
+          <a href="#">Blog</a>
+          <a href="#">Rooms</a>
+          <a href="#">Subscription</a>
+          <a href="#">Gift Card</a>
+        </div>
 
-                <article class="room">
-                    <div class="room-image">
-                        <img src="img/room med.jpg" alt="room image">
-                    </div>
-                    <div class="room-text">
-                        <h3>Medium Sized Luxury Rooms</h3>
-                        <ul>
-                            <li>
-                                <i class="fas fa-arrow-alt-circle-right"></i>
-                                lorem ipsum dolor sit amit.
-                            </li>
+        <div>
+          <h2>Privacy</h2>
+          <a href="#">Career</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Services</a>
+        </div>
 
-                            <li>
-                                <i class="fas fa-arrow-alt-circle-right">
-                                    lorem ipsum dolor sit amit.
-                                </i>
-                            </li>
+        <div>
+          <h2>Have A Question</h2>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <span> fake hotel at 123 </span>
+          </div>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-phone-alt"></i>
+            </span>
+            <span> +91000000000 </span>
+          </div>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span> info@domain.com </span>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-                            <li>
-                                <i class="fas fa-arrow-alt-circle-right">
-                                    lorem ipsum dolor sit amit.
-                                </i>
-                            </li>
-                        </ul>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta iusto officia nemo architecto, enim deserunt. Tenetur quo dicta facere nulla harum! Voluptate commodi mollitia quae aspernatur doloremque fugit tenetur modi!</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto quis, deleniti sint perferendis in dicta unde quibusdam temporibus optio sapiente dolores! Possimus dignissimos accusamus quia, voluptatum consequatur vero eius animi.</p>
-                        <p class="rate">
-                            <span>$100.00 /</span> Per Night
-                        </p>
-                        <button type="button" class = "btn">book now</button>
-                    </div>
-                </article>
-
-                <article class="room">
-                    <div class="room-image">
-                        <img src="img/suite room.jpg" alt="room image">
-                    </div>
-                    <div class="room-text">
-                        <h3>Suite Rooms</h3>
-                        <ul>
-                            <li>
-                                <i class="fas fa-arrow-alt-circle-right"></i>
-                                lorem ipsum dolor sit amit.
-                            </li>
-
-                            <li>
-                                <i class="fas fa-arrow-alt-circle-right">
-                                    lorem ipsum dolor sit amit.
-                                </i>
-                            </li>
-
-                            <li>
-                                <i class="fas fa-arrow-alt-circle-right">
-                                    lorem ipsum dolor sit amit.
-                                </i>
-                            </li>
-                        </ul>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta iusto officia nemo architecto, enim deserunt. Tenetur quo dicta facere nulla harum! Voluptate commodi mollitia quae aspernatur doloremque fugit tenetur modi!</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto quis, deleniti sint perferendis in dicta unde quibusdam temporibus optio sapiente dolores! Possimus dignissimos accusamus quia, voluptatum consequatur vero eius animi.</p>
-                        <p class="rate">
-                            <span>$100.00 /</span> Per Night
-                        </p>
-                        <button type="button" class = "btn">book now</button>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class=" customers" id="customers">
-            <div class="sec-width">
-                <div class="title">
-                    <h2>customers</h2>
-                </div>
-                <div class="customers-container">
-                    <div class="rating">
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                    </div>
-                    <h3>We Loved it</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id libero ipsam delectus architecto laboriosam voluptatum, nulla vero sunt, quaerat, provident voluptates sapiente ipsa deserunt tenetur nihil aspernatur a quos exercitationem!</p>
-                    <span>Customer Name, Country</span>
-                </div>
-
-                <div class="customers-container">
-                    <div class="rating">
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                    </div>
-                    <h3>Nice Place</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id libero ipsam delectus architecto laboriosam voluptatum, nulla vero sunt, quaerat, provident voluptates sapiente ipsa deserunt tenetur nihil aspernatur a quos exercitationem!</p>
-                    <span>Customer Name, Country</span>
-                </div>
-
-                <div class="customers-container">
-                    <div class="rating">
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                    </div>
-                    <h3>Comfortable living</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id libero ipsam delectus architecto laboriosam voluptatum, nulla vero sunt, quaerat, provident voluptates sapiente ipsa deserunt tenetur nihil aspernatur a quos exercitationem!</p>
-                    <span>Customer Name, Country</span>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <div class="footer-container">
-                <div>
-                    <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia tenetur sint ea, officia expedita, suscipit dolores maiores magni veniam ipsam voluptas dolorum dolor illo et illum impedit aliquid accusamus?</p>
-                    <ul class = "social-icons">
-                        <li class="flex">
-                            <i class="fa fa-twitter fa-2x"></i>
-                        </li>
-                        <li class="flex">
-                            <i class="fa fa-facebook fa-2x"></i>
-                        </li>
-                        <li class="flex">
-                            <i class="fa fa-instagram fa-2x"></i>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h2>Useful Links</h2>
-                    <a href = "#">Blog</a>
-                    <a href = "#">Rooms</a>
-                    <a href = "#">Subscription</a>
-                    <a href = "#">Gift Card</a>
-                </div>
-
-                <div>
-                    <h2>Privacy</h2>
-                    <a href = "#">Career</a>
-                    <a href = "#">About Us</a>
-                    <a href = "#">Contact Us</a>
-                    <a href = "#">Services</a>
-                </div>
-
-                <div>
-                    <h2>Have A Question</h2>
-                    <div class = "contact-item">
-                        <span>
-                            <i class = "fas fa-map-marker-alt"></i>
-                        </span>
-                        <span>
-                            fake hotel at 123
-                        </span>
-                    </div>
-                    <div class = "contact-item">
-                        <span>
-                            <i class = "fas fa-phone-alt"></i>
-                        </span>
-                        <span>
-                            +91000000000
-                        </span>
-                    </div>
-                    <div class = "contact-item">
-                        <span>
-                            <i class = "fas fa-envelope"></i>
-                        </span>
-                        <span>
-                            info@domain.com
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <script src="script.js"></script>
-    </body>
+    <script src="script.js"></script>
+  </body>
 </html>
