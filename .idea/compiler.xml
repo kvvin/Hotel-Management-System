@@ -10,9 +10,6 @@
         <module name="com.inn.accustay" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="com.inn.accustay" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
