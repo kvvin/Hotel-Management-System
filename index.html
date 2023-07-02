@@ -23,7 +23,7 @@
       </div>
       <div class="head-bottom flex">
         <h2>A pleasant and cozy accommodation option.</h2>
-        <p>
+        <p id = "intro">
           At AccuStay, we believe that exceptional guest experiences begin with
           efficient and streamlined operations. Our innovative Hotel Management
           System is designed to empower hoteliers and hospitality professionals
@@ -164,6 +164,14 @@
           <input type="number" min="0" value="0" id="children" />
         </div>
         <div class="form-item">
+          <label for="room-type">Room Type:</label>
+          <select id="room-type">
+            <option value="small">Small Luxury Room</option>
+            <option value="medium">Medium Sized Luxury Room</option>
+            <option value="suite">Suite Room</option>
+          </select>
+        </div>
+        <div class="form-item">
           <label for="rooms">Rooms: </label>
           <input type="number" min="1" value="1" id="rooms" />
         </div>
@@ -171,6 +179,9 @@
           <input type="submit" class="btn" value="Book Now" />
         </div>
       </form>
+    </div>
+
+    </form>
     </div>
 
     <section class="rooms sec-width" id="rooms">

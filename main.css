@@ -49,8 +49,13 @@ body{
     align-items: center;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h3,h4,h5,h6{
     padding: 8px 0;
+}
+h2{
+    padding: 8px 0;
+    color: white;
+
 }
 img{
     width: 100%;
@@ -64,8 +69,7 @@ img{
 }
 
 .header{
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2));
-    background-image: url("img/banner.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2)), url("img/banner.jpg") center/cover no-repeat;
     min-height: 100vh;
     columns: #fff;
     padding: 25px;
@@ -534,4 +538,7 @@ img{
     bottom: 0;
     left: 0;
     z-index: 5;
+}
+#intro{
+    color: white;
 }
