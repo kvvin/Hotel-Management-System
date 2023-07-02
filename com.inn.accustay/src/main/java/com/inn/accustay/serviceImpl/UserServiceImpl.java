@@ -30,6 +30,7 @@ UserDao userDao;
                     userDao.save(getUserFromMap(requestMap));
                     return hotelUtils.getResponseEntity("SignUp Successful", HttpStatus.OK);
                 } else {
+                    // test
                     return hotelUtils.getResponseEntity("Email already exists", HttpStatus.BAD_REQUEST);
                 }
             } else {
