@@ -49,10 +49,10 @@ body{
     align-items: center;
 }
 
-h1,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6{
     padding: 8px 0;
 }
-h2{
+#intro{
     padding: 8px 0;
     color: white;
 
@@ -539,6 +539,6 @@ img{
     left: 0;
     z-index: 5;
 }
-#intro{
+#intro-heading{
     color: white;
 }
