@@ -1,0 +1,49 @@
+
+CREATE TABLE Books(ID INT PRIMARY KEY, title VARCHAR2(20), type VARCHAR2(20), author_id NUMBER(10), editor_id NUMBER(10), translator_id NUMBER(10));
+INSERT INTO books(ID, title, type, author_id, editor_id,translator_id) VALUES(3, 'Lovely Love', 'original', 14, 24,'');
+
+
+CREATE TABLE authors(ID INT PRIMARY KEY,first_name VARCHAR2(20), last_name VARCHAR2(20));
+INSERT INTO authors(ID, first_name,last_name) VALUES(12, 'Olga', 'Savelieva');
+
+CREATE TABLE editors(ID INT PRIMARY KEY,first_name VARCHAR2(20), last_name VARCHAR2(20));
+INSERT INTO editors(ID, first_name,last_name) VALUES(21, 'Daniel', 'Brown');
+
+CREATE TABLE translator(ID INT PRIMARY KEY,first_name VARCHAR2(20), last_name VARCHAR2(20));
+INSERT INTO translator(ID, first_name,last_name) VALUES(31, 'Ira', 'Davies'); 
+INSERT INTO translator(ID, first_name,last_name) VALUES(32, 'Ling', 'Weng'); 
+INSERT INTO translator(ID, first_name,last_name) VALUES(33, 'Kristian', 'Green'); 
+INSERT INTO translator(ID, first_name,last_name) VALUES(34, 'Roman', 'Edwards'); 
+
+ ------INNER JOIN------
+SELECT b.id, b.title, a.first_name, a.last_name
+    FROM books b
+    INNER JOIN authors a
+    ON b.author_id = a.id
+    ORDER BY b.id;
+
+------LEFT JOIN------
+SELECT b.id, b.title, b.type, a.last_name AS author,
+t.last_name AS translator
+FROM books b
+LEFT JOIN authors a
+ON b.author_id = a.id
+LEFT JOIN translator t
+ON b.translator_id = t.id
+ORDER BY b.id;
+
+
+------RIGHT JOIN------
+ SELECT b.id, b.title, e.last_name AS editor
+    FROM books b
+    RIGHT JOIN editors e
+    ON b.editor_id = e.id
+    ORDER BY b.id;
+
+
+------FULL JOIN------
+ SELECT b.id, b.title, e.last_name AS editor
+     FROM books b
+     FULL JOIN editors e
+     ON b.editor_id = e.id
+     ORDER BY b.id;

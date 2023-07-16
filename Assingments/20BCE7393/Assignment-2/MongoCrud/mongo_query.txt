@@ -1,0 +1,21 @@
+db.students.insertMany([
+  { id: 1, name: 'Akash', gender: 'M' },
+  { id: 2, name: 'Pragya', gender: 'F' },
+  { id: 3, name: 'Aayush', gender: 'M' },
+  { id: 4, name: 'Harsh', gender: 'M' },
+  { id: 5, name: 'Kartik', gender: 'M' },
+  { id: 6, name: 'Priya', gender: 'F' }
+]);
+
+
+db.students.find();
+
+db.students.updateOne({name: "Akash"}, {$set:{name: "Akash Sharma"}})
+db.students.find();
+
+db.students.deleteOne({name:"Akash Sharma"})
+db.students.find({name:"Akash Sharma"})
+
+
+
+
